@@ -23,6 +23,6 @@ How To Run On Command-Line
     Setting Custom Values:
         use the -x [number_of_threads] and -y [number_of_iterations] flags
         Examples:
-            ./exeFileName -x 8 -y 400 (runs 8 threads with 400 iterations each)
+            ./exeFileName -x 8 -y 400 (Runs 8 threads with 400 iterations each)
             ./exeFileName -x 2        (Runs 2 threads with default iterations each)
             ./exeFileName -y 2000     (Runs default number of threads with 2000 iterations each)
