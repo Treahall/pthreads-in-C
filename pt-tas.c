@@ -51,6 +51,11 @@ void *increment(void *num)
 // Acts as the outer-most parent thread.
 int main(int argc, char *argv[])
 {
+	// Assign default values.
+	int num_threads = NUM_THREADS;
+	int num_iterations = NUM_ITERATIONS;
+
+	
 	// Handles command-line arguments.
 	switch(argc) {
 		case 1:
@@ -83,9 +88,7 @@ int main(int argc, char *argv[])
 	printf("num_iterations is %d.\n", num_iterations);
 
 
-	// Assign default values.
-	int num_threads = NUM_THREADS;
-	int num_iterations = NUM_ITERATIONS;
+	
 	// Initialize threads and variables used. 
 	pthread_t threads[num_threads];
 	int status, i;
