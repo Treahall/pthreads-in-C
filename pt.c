@@ -21,7 +21,6 @@ static int counter = 0;
 void *increment(void *num)
 {
 	/*This function increments the global counter by num.*/
-	printf("A thread is incrementing!\n");
 	int i;
 	int total = (int)num;
 	for(i = 0; i < total; i++) {
